@@ -1,0 +1,26 @@
+body{
+    background-image: url(../img/back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.form{
+    text-align: center;
+    margin-top: 248px;
+    font-size: 36px;
+}
+
+button{
+    border-radius: 24px;
+    width: 120px;
+    height: 48px;
+    font-size: 18px;
+    border: 0;
+}
+
+.back{
+    text-align: center;
+    margin-top: 8px;
+}
