@@ -1,202 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local game</title>
-    <link rel="stylesheet" href="/static/localstyle.css">
+	<title>local game</title>
+	<link rel="stylesheet" href="/static/localstyle.css">
+
 </head>
-<body>
-    <div class="container">
-    <table id="checkers">
-        <tr>
-            <td class="col-c row-c"></td>
-            <td class="row-c">A</td>
-            <td class="row-c">B</td>
-            <td class="row-c">C</td>
-            <td class="row-c">D</td>
-            <td class="row-c">E</td>
-            <td class="row-c">F</td>
-            <td class="row-c">G</td>
-            <td class="row-c">H</td>
-            <td class="row-c">I</td>
-            <td class="row-c">J</td>
-            <td class="col-c row-c">
-        </tr>
-        <tr>
-            <td class="col-c">10</td>
-            <td class="b-b b-r c-w"></td>
-            <td class="b-b c-g"><img src="img/shr.jpg"></td>
-            <td class="b-b c-w"></td>
-            <td class="b-b c-g"><img src="img/shr.jpg"></td>
-            <td class="b-b c-w"></td>
-            <td class="b-b c-g"><img src="img/shr.jpg"></td>
-            <td class="b-b c-w"></td>
-            <td class="b-b c-g"><img src="img/shr.jpg"></td>
-            <td class="b-b c-w"></td> 
-            <td class="b-b b-l c-g"><img src="img/shr.jpg"></td>
-            <td class="col-c">10</td>
-        </tr>
-        <tr>
-            <td class="col-c">9</td>
-            <td class="b-r c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="b-l c-w"></td>
-            <td class="col-c">9</td>
-        </tr>
-        <tr>
-            <td class="col-c">8</td>
-            <td class="b-r c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="b-l c-g"><img src="img/shr.jpg"></td>
-            <td class="col-c">8</td>
-        </tr>
-        <tr>
-            <td class="col-c">7</td>
-            <td class="b-r c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shr.jpg"></td>
-            <td class="b-l c-w"></td>
-            <td class="col-c">7</td>
-        </tr>
-        <tr>
-            <td class="col-c">6</td>
-            <td class="b-r c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="b-l c-g"></td>
-            <td class="col-c">6</td>
-        </tr>
-        <tr>
-            <td class="col-c">5</td>
-            <td class="b-r c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="c-w"></td>
-            <td class="c-g"></td>
-            <td class="b-l c-w"></td>
-            <td class="col-c">5</td>
-        </tr>
-        <tr>
-            <td class="col-c">4</td>
-            <td class="b-r c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="b-l c-g"><img src="img/shw.jpg"></td>
-            <td class="col-c">4</td>
-        </tr>
-        <tr>
-            <td class="col-c">3</td>
-            <td class="b-r c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="b-l c-w"></td>
-            <td class="col-c">3</td>
-        </tr>
-        <tr>
-            <td class="col-c">2</td>
-            <td class="b-r c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="c-g"><img src="img/shw.jpg"></td>
-            <td class="c-w"></td>
-            <td class="b-b c-g"><img src="img/shw.jpg"></td>
-            <td class="col-c">2</td>
-        </tr>
-        <tr>
-            <td class="col-c">1</td>
-            <td class="b-t b-r c-g"><img src="img/shw.jpg"></td>
-            <td class="b-t c-w"></td>
-            <td class="b-t c-g"><img src="img/shw.jpg"></td>
-            <td class="b-t c-w"></td>
-            <td class="b-t c-g"><img src="img/shw.jpg"></td>
-            <td class="b-t c-w"></td>
-            <td class="b-t c-g"><img src="img/shw.jpg"></td>
-            <td class="b-t c-w"></td>
-            <td class="b-t c-g"><img src="img/shw.jpg"></td>
-            <td class="b-t b-l c-w"></td>
-            <td class="col-c">1</td>
-        </tr>
-        <tr>
-            <td class="col-c row-c"></td>
-            <td class="row-c">A</td>
-            <td class="row-c">B</td>
-            <td class="row-c">C</td>
-            <td class="row-c">D</td>
-            <td class="row-c">E</td>
-            <td class="row-c">F</td>
-            <td class="row-c">G</td>
-            <td class="row-c">H</td>
-            <td class="row-c">I</td>
-            <td class="row-c">J</td>
-            <td class="col-c row-c">
-        </tr>
-    </table>
-    </div>
+<body id="ht">
 
-    <div class="buton">
-        <button onclick="goBack()">Home</button>
-    </div>
+<div class="checker white_checker" style="display:none"> </div>
+<div class="checker black_checker" style="display:none"> </div>
 
-    <div id="scoreboard">
-    <h3>Score</h3>
-    <p id="player1-name"> Player 1: <span id="player1-score">0</span>
-    <p id="player2-name"> Player 2: <span id="player2-score">0</span>
-    </div>
 
-   <script>
-        
-        function goBack () {
-            window.history.back()
-        }
+<div class="square" style="display: none" id ="ht"> </div>
+<div class="black_background" id="black_background"> </div>
 
-    </script>
-    <script src="/scripts/local-game.js"></script>
+	<div class="score" id="score">
+		<br>
+	</div>
+<div class="table" id="table">
+
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>	
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>
+	<div class="checker white_checker"> </div>	
+
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+	<div class="checker black_checker"> </div>
+
+
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="clear_float"> </div>
+	
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="clear_float"> </div>
+
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="clear_float"> </div>
+
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="clear_float"> </div>
+
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="clear_float"> </div>
+
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="clear_float"> </div>
+
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="clear_float"> </div>
+
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="square white_square"> </div>
+	<div class="square black_square"> </div>
+	<div class="clear_float"> </div>
+
+</div>
+<div class="back">
+
+	<button onclick="history.back()">Go back</button>
+<div>
+<script src="/scripts/local-game.js" > </script>
 </body>
 </html>
